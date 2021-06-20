@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MLNetApp.Shared.Models;
 
 namespace MLNetApp.Clustering.Models
 {

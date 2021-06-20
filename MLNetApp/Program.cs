@@ -18,7 +18,7 @@ namespace MLNetApp
         private static void Main(string[] args)
         {
             var articleClusterer = new ArticleClusterer(DataRepository.GetArticles());
-            var clusteredArticles = articleClusterer.GetClusters(2).ToList();
+            var clusteredArticles = articleClusterer.GetClusters(3).ToList();
 
             var clustersList = clusteredArticles
                 .GroupBy(article => article.PredictedClusterId)

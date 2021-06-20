@@ -25,7 +25,8 @@ namespace MLNetApp.Clustering
 
             var pipeline = mlContext.Transforms.Text.TokenizeIntoWords(
                     "Tokens", "Text", 
-                    new[] {' ', ',', '.', '\n', '\r', '\t', '—', '(', ')', '[', ']', '"', '\'', '«', '‹', '»', '›', '〞', '〟'})
+                    new[] {' ', ',', '.', '\n', '\r', '\t', '—', '(', ')', '[', ']', '"', 
+                        '\'', '«', '‹', '»', '›', '〞', '〟', ';', '<', '>', '?', '!'})
                 .Append(mlContext.Transforms.Text.RemoveDefaultStopWords(
                     "Tokens", "Tokens", StopWordsRemovingEstimator.Language.Russian))
                 .Append(mlContext.Transforms.Text.FeaturizeText("Features", "Tokens"))
