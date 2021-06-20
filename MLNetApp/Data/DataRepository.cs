@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using MLNetApp.Shared.Extensions;
+using MLNetApp.Shared.Models;
 using MLNetApp.Tagging.Models;
 
 namespace MLNetApp.Data
@@ -11,7 +12,7 @@ namespace MLNetApp.Data
     {
         private static readonly string ArticlesDirectory = Path.Combine(Environment.CurrentDirectory, @"Data\Articles\");
 
-        private const string StopWordsResourceName = "MLNetApp.Data.Additional.stop-words.txt";
+        private const string StopWordsResourceName = "MLNetApp.Data.Additional.stopWords.txt";
 
         private static IEnumerable<string> GetTextFromFiles(string directoryPath, string searchPattern = "*.*")
         {

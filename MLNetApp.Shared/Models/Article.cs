@@ -1,4 +1,4 @@
-﻿namespace MLNetApp.Tagging.Models
+﻿namespace MLNetApp.Shared.Models
 {
     public class Article
     {

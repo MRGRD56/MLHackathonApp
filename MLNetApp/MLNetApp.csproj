@@ -12,7 +12,37 @@
     <ItemGroup>
       <EmbeddedResource Remove="obj\**" />
       <None Remove="Data\Additional\stop-words-ru.txt" />
-      <EmbeddedResource Include="Data\Additional\stop-words.txt" />
+      <EmbeddedResource Include="Data\Additional\stopWords.txt" />
+      <None Update="Data\Articles\article1.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article2.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article3.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article10.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article4.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article5.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article7.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article8.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article9.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\Articles\article6.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
     <ItemGroup>
@@ -35,6 +65,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MLNetApp.Clustering\MLNetApp.Clustering.csproj" />
       <ProjectReference Include="..\MLNetApp.Shared\MLNetApp.Shared.csproj" />
       <ProjectReference Include="..\MLNetApp.Tagging\MLNetApp.Tagging.csproj" />
     </ItemGroup>

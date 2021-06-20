@@ -4,7 +4,7 @@ namespace MLNetApp.Tagging.Models
 {
     public class ArticlePrediction
     {
-        [ColumnName("PredictedLabel")]
-        public string[] Keywords { get; set; }
+        // [ColumnName("PredictedLabel")]
+        public string[] Tokens { get; set; }
     }
 }
